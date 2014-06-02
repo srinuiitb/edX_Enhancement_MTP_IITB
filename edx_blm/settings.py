@@ -1,4 +1,14 @@
+import os
+#import ldap
+#import logging
+#from django_auth_ldap.config import LDAPSearch
+
+
+
 # Django settings for edx_blm project.
+
+
+
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -107,10 +117,15 @@ ROOT_URLCONF = 'edx_blm.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'edx_blm.wsgi.application'
 
+SITE_ROOT = os.path.dirname(os.path.dirname(__file__))
+
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+	os.path.join(SITE_ROOT,'BLM/templates'),
+	#os.path.join(os.path.dirname(__file__), '/templates').replace('\\','/'),
+
 )
 
 INSTALLED_APPS = (

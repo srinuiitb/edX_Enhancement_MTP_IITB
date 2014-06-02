@@ -1,4 +1,22 @@
 from django.contrib import admin 
-from BLM.models import Student 
+from BLM.models import * 
 
-admin.site.register(Student)
+admin.site.register(Local_University)
+admin.site.register(Mooc_University)
+admin.site.register(Affiliated_College)
+admin.site.register(Stream)
+admin.site.register(Branch)
+admin.site.register(Mooc_Instructor)
+admin.site.register(Local_Instructor_Aff)
+admin.site.register(Mooc_Course)
+admin.site.register(Students_Affiliated_College)
+admin.site.register(Project_Course)
+admin.site.register(Project_Student)
+admin.site.register(Country)
+admin.site.register(State)
+admin.site.register(Marks_Course_Local_Instructor)
+admin.site.register(Marks_Course_Mooc_Instructor)
+admin.site.register(Marks_Distribution_Course)
+admin.site.register(Enrolled_Students_Mooc_Course)
+admin.site.register(Local_Instructor_Aff_Mooc_Course )
+admin.site.register(Final_Marks_Student_Course )
